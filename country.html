@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="font-family: 'Josefin Sans', sans-serif">
+    <h1 class="text-2xl lg:text-5xl mt-10 text-center">Country Information</h1>
+
+    <h2 class="text-xl lg:text-3xl mt-10 text-center">Country List</h2>
+
+    <div class="text-center m-10">
+      <input
+        class="px-5 py-1 lg:text-xl text-base lg:w-60 w-36"
+        type="text"
+        name=""
+        id="input-field"
+        placeholder=" Search"
+      />
+      <button
+        onclick="button()"
+        style="margin-left: -5px"
+        class="bg-emerald-700 text-white px-2 py-1 lg:text-xl text-base rounded hover:bg-sky-700 w-20 lg:w-40"
+      >
+        Search
+      </button>
+    </div>
+
+    <section class="flex justify-center">
+      <div id="result-output"></div>
+    </section>
+
+    <section class="grid grid-cols-3 lg:px-40">
+      <div class="w-full col-span-3">
+        <div
+          id="sectionForAllElement"
+          class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 p-10 content-between"
+        ></div>
+      </div>
+    </section>
+
+    <script src="county.js"></script>
+  </body>
+</html>
